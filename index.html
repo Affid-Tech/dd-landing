@@ -32,7 +32,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: url('assets/bg.jpg');
+            background-image: url('assets/bg.jpg'); /* Change this to your actual path */
             background-repeat: repeat;
             background-size: cover;
             mix-blend-mode: multiply;
@@ -88,20 +88,31 @@
             margin-bottom: 25px;
         }
 
-        .social-link {
-            text-decoration: none;
-            color: white;
-            font-size: 1.2rem;
-            margin-top: 1.5rem;
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #0077b6;
-            border-radius: 8px;
-            transition: background-color 0.3s;
+        .social-section {
+            margin-top: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
-        .social-link:hover {
-            background-color: #0099cc;
+        .social-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: transparent;
+            border: none;
+            padding: 12px;
+            cursor: pointer;
+            margin-bottom: 1rem;
+            transition: filter 0.3s ease;
+        }
+
+        .social-button:hover {
+            filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.3)); /* Shadow following SVG shape */
+        }
+
+        .social-button img {
+            width: 40px; /* Adjust size as necessary */
         }
 
         /* Mobile Optimization */
@@ -122,6 +133,10 @@
             .logo {
                 max-width: 180px;
             }
+
+            .social-button {
+                padding: 12px;
+            }
         }
     </style>
 </head>
@@ -132,8 +147,16 @@
         <img src="assets/white-letter-logo.png" alt="Digital Dicebound Logo" class="logo">
         <h1>Добро пожаловать в Digital Dicebound</h1>
         <p>Мы играем в D&D онлайн с любой точки мира. Мы создаём пространство для связи игроков и мастеров, а также предоставляем платформу для игр.</p>
-        <a href="https://t.me/digital_dicebound" class="social-link" target="_blank">Присоединяйтесь к нашему Telegram каналу</a>
         <a href="https://game.digitaldicebound.com" class="button" target="_blank">Играть</a>
+        
+        <!-- New Section for Social Media -->
+        <div class="social-section">
+            <h2>Присоединяйся к нашему сообществу!</h2>
+            <a href="https://t.me/digital_dicebound" class="social-button" target="_blank">
+                <img src="https://telegram.org/img/t_logo.svg" alt="Telegram Logo">
+            </a>
+            <!-- Add more social buttons here later -->
+        </div>
     </div>
 </body>
 </html>
