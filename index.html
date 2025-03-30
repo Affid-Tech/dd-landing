@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Dicebound</title>
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2&amp;display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Exo 2', sans-serif;
@@ -32,7 +33,8 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: url('assets/bg.jpg'); /* Change this to your actual path */
+            background-image: url('assets/bg.jpg');
+            /* Adjust this path */
             background-repeat: repeat;
             background-size: cover;
             mix-blend-mode: multiply;
@@ -40,9 +42,17 @@
         }
 
         @keyframes gradient {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
         }
 
         .content {
@@ -80,10 +90,19 @@
             border-radius: 8px;
             margin-bottom: 2rem;
             transition: background-color 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
         }
 
         .button:hover {
             background-color: #006db3;
+        }
+
+        .button img {
+            height: 44px;
+            margin-right: 16px;
         }
 
         .logo {
@@ -148,20 +167,22 @@
         }
     </style>
 </head>
+
 <body>
     <div class="gradient-background"></div>
     <div class="paper-overlay"></div>
     <div class="content">
         <img src="assets/white-letter-logo.png" alt="Digital Dicebound Logo" class="logo">
         <h1>Добро пожаловать в Digital Dicebound</h1>
-        <p>Мы играем в D&D онлайн с любой точки мира. Мы создаём пространство для связи игроков и мастеров, а также предоставляем платформу для игр.</p>
-        
-        <div class="social-section">
-            <h2>Присоединяйся к нашему сообществу!</h2>
-            <a href="https://t.me/digital_dicebound" class="social-button" target="_blank">
-                <img src="https://telegram.org/img/t_logo.svg" alt="Telegram Logo">
-            </a>
-        </div>
+        <p>В Digital Dicebound мы создаем идеальные условия для игры в D&amp;D с друзьями по всему миру. Легко находите других игроков и начинайте свои приключения прямо сейчас!</p>
+
+        <a href="https://t.me/digital_dicebound" class="button" target="_blank">
+            <img src="https://telegram.org/img/t_logo.svg" alt="Telegram Logo" style="
+"><span>Присоединяйся к нашему сообществу в Telegram</span>
+
+        </a>
     </div>
+
 </body>
+
 </html>
