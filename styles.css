@@ -192,4 +192,8 @@ p {
     .social-button {
         padding: 12px;
     }
+
+    .secondary-actions {
+        display: block;
+    }
 }
