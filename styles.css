@@ -98,6 +98,12 @@ p {
     margin-right: 16px;
 }
 
+.secondary-actions {
+    gap: 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 .button.secondary {
   background-color: transparent;
   color: #93c5fd;
