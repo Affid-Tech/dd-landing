@@ -1,8 +1,8 @@
+// main.js — модульная загрузка Shoelace и HTML-фрагментов
 
-// Импорт Shoelace UI
-import 'https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.13.0/dist/shoelace.js';
+// ✅ Импортируем bundle с встроенным lit
+import 'https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.13.0/cdn/shoelace.js';
 
-// Автоматическая подгрузка всех фрагментов с data-include
 document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('[data-include]').forEach(async (el) => {
     const file = el.getAttribute('data-include');
