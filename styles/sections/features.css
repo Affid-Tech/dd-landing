@@ -1,0 +1,25 @@
+
+/* features.css — стили для секции "Что делает нас особенными" */
+.features-section {
+  background-color: #121212;
+  text-align: center;
+  color: var(--color-text);
+  padding: 4rem 1rem;
+}
+
+.features-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.feature-card::part(base) {
+  background-color: #1e1e1e;
+  border: 1px solid #2c2c2c;
+  padding: 1rem;
+}
