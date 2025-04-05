@@ -1,0 +1,9 @@
+/* variables.css — CSS-переменные (цвета, размеры и т.п.) */
+:root {
+    --color-bg: #0e0e0e;
+    --color-text: #f4f4f4;
+    --color-accent: #e63946;
+  
+    --font-main: 'Exo 2', sans-serif;
+  }
+  

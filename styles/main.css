@@ -1,0 +1,16 @@
+/* main.css — собирает все стили проекта */
+
+/* Shoelace тема */
+@import url('https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.13.0/dist/themes/dark.css');
+
+/* Base */
+@import './base/reset.css';
+@import './base/variables.css';
+@import './base/typography.css';
+
+/* Layout */
+@import './layout/layout.css';
+@import './layout/components.css';
+
+/* Sections */
+@import './sections/hero.css';

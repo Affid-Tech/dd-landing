@@ -1,0 +1,32 @@
+
+/* components.css — UI-компоненты: navbar, кнопки, флексы */
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: #1a1a1a;
+    padding: 1rem 0;
+    z-index: 10;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+  
+  .nav-links a {
+    color: #ccc;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+  
+  .nav-links a:hover {
+    color: #fff;
+  }
+  

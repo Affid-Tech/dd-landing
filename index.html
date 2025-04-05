@@ -1,81 +1,69 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Digital Dicebound — Онлайн-приключения в D&D</title>
-    <!-- Favicon links -->
-    <link rel="icon" href="assets/favicon-16x16.png" sizes="16x16" type="image/png">
-    <link rel="icon" href="assets/favicon-32x32.png" sizes="32x32" type="image/png">
-    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-    
-    <!-- Android-specific icons -->
-    <link rel="icon" sizes="192x192" href="assets/android-chrome-192x192.png">
-    <link rel="icon" sizes="512x512" href="assets/android-chrome-512x512.png">
-    
-    <!-- Manifest file for PWA -->
-    <link rel="manifest" href="assets/manifest.json">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2&amp;display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digital Dicebound — Онлайн-приключения в D&D</title>
 
+  <!-- Стили -->
+  <link rel="stylesheet" href="./styles/reset.css" />
+  <link rel="stylesheet" href="./styles/components.css" />
   <link rel="stylesheet" href="./styles/main.css" />
-  <script defer src="./scripts/main.js"></script>
 </head>
 <body>
+  <!-- Sticky Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="#hero" class="logo">Digital Dicebound</a>
+      <ul class="nav-links">
+        <li><a href="#about">О нас</a></li>
+        <li><a href="#features">Особенности</a></li>
+        <li><a href="#how-it-works">Как это работает</a></li>
+        <li><a href="#schedule">Расписание</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li>
+          <sl-button href="#final-cta" variant="primary" size="medium">
+            Присоединиться
+          </sl-button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
   <!-- Header / Hero -->
-  <header id="hero">
-    <!-- hero.html -->
-  </header>
+  <header id="hero" data-include="sections/hero.html"></header>
 
   <!-- About -->
-  <section id="about">
-    <!-- about.html -->
-  </section>
+  <section id="about" data-include="sections/about.html"></section>
 
   <!-- Features -->
-  <section id="features">
-    <!-- features.html -->
-  </section>
+  <section id="features" data-include="sections/features.html"></section>
 
   <!-- How it works -->
-  <section id="how-it-works">
-    <!-- how-it-works.html -->
-  </section>
+  <section id="how-it-works" data-include="sections/how-it-works.html"></section>
 
   <!-- For DMs -->
-  <section id="for-dms">
-    <!-- for-dms.html -->
-  </section>
+  <section id="for-dms" data-include="sections/for-dms.html"></section>
 
   <!-- Why Paid -->
-  <section id="why-paid">
-    <!-- why-paid.html -->
-  </section>
+  <section id="why-paid" data-include="sections/why-paid.html"></section>
 
   <!-- Schedule -->
-  <section id="schedule">
-    <!-- schedule.html -->
-  </section>
+  <section id="schedule" data-include="sections/schedule.html"></section>
 
   <!-- Testimonials -->
-  <section id="testimonials">
-    <!-- testimonials.html -->
-  </section>
+  <section id="testimonials" data-include="sections/testimonials.html"></section>
 
   <!-- FAQ -->
-  <section id="faq">
-    <!-- faq.html -->
-  </section>
+  <section id="faq" data-include="sections/faq.html"></section>
 
   <!-- Final CTA -->
-  <section id="final-cta">
-    <!-- final-cta.html -->
-  </section>
+  <section id="final-cta" data-include="sections/final-cta.html"></section>
 
   <!-- Footer -->
-  <footer id="footer">
-    <!-- footer.html -->
-  </footer>
+  <footer id="footer" data-include="sections/footer.html"></footer>
+
+  <!-- Скрипты -->
+  <script type="module" src="./scripts/main.js"></script>
 </body>
 </html>
