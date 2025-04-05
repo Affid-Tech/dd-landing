@@ -1,0 +1,38 @@
+
+/* how-it-works.css — стили для секции "Как это работает" */
+.how-it-works-section {
+  background-color: #181818;
+  color: var(--color-text);
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.how-it-works-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.roles-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.role-card::part(base) {
+  background-color: #1e1e1e;
+  padding: 1.5rem;
+  border: 1px solid #333;
+  max-width: 320px;
+  text-align: left;
+}
+
+.role-card ol {
+  margin-top: 1rem;
+  padding-left: 1.25rem;
+  color: #ccc;
+}
+
+.role-card li {
+  margin-bottom: 0.5rem;
+}
