@@ -1,0 +1,19 @@
+
+/* schedule.css — упрощённая версия с кнопкой */
+.schedule-section {
+  background-color: #101010;
+  color: var(--color-text);
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.schedule-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.schedule-section .lead {
+  font-size: 1.15rem;
+  color: #ccc;
+  margin-bottom: 2rem;
+}
