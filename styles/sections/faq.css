@@ -1,0 +1,32 @@
+
+/* faq.css — стили для секции FAQ */
+.faq-section {
+  background-color: #121212;
+  color: var(--color-text);
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.faq-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.faq-list {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+sl-details::part(base) {
+  background-color: #1c1c1c;
+  border: 1px solid #2e2e2e;
+  border-radius: 6px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+sl-details::part(summary) {
+  font-weight: 600;
+  color: #fff;
+}
