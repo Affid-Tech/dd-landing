@@ -1,0 +1,28 @@
+
+/* footer.css — стили для футера */
+.footer {
+  background-color: #0a0a0a;
+  color: #888;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+}
+
+.footer-links {
+  margin-bottom: 0.5rem;
+}
+
+.footer a {
+  color: #ccc;
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: var(--color-text);
+}
+
+.footer-tagline {
+  font-style: italic;
+  font-size: 0.85rem;
+}
