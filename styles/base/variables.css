@@ -1,13 +1,12 @@
 /* variables.css — CSS-переменные (цвета, размеры и т.п.) */
 :root {
-  --color-bg: #0b0c10;
-  --color-text: #f4f4f4;
-  --color-accent: #9b5de5;
-  /* purple glow */
-  --color-accent-alt: #00f5d4;
-  /* neon mint */
-  --color-surface: #1a1a1a;
-  --color-surface-glow: rgba(255, 255, 255, 0.05);
+  --color-bg: #D669B4; /* насыщенно-розовый фиолетовый */
+  --color-text: #ffffff;
+  --color-accent: #00C9C8; /* мятный */
+  --color-accent-alt: #FF6F61; /* кораллово-розовый */
+  --color-button-primary: #006C91;
+  --color-button-secondary: #ffffff;
+  --color-surface: rgba(255, 255, 255, 0.1);
 
   --font-main: 'Exo 2', sans-serif;
 }

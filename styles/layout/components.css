@@ -35,6 +35,25 @@ h3 {
   text-shadow: 0 0 8px var(--color-accent);
 }
 
+sl-button.primary::part(base) {
+  background-color: var(--color-button-primary);
+  color: white;
+  font-weight: bold;
+  border-radius: 12px;
+}
+
+sl-button.secondary::part(base) {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+sl-button::part(base) {
+  background: linear-gradient(to right, #9b5de5, #00f5d4);
+  color: #000;
+  font-weight: 600;
+}
+
 sl-button::part(base):hover {
   box-shadow: 0 0 12px var(--color-accent-alt);
   transition: box-shadow 0.3s ease;
@@ -48,8 +67,4 @@ sl-card::part(base) {
   transition: border-color 0.3s ease;
 }
 
-sl-button::part(base) {
-  background: linear-gradient(to right, #9b5de5, #00f5d4);
-  color: #000;
-  font-weight: 600;
-}
+
