@@ -1,0 +1,40 @@
+
+/* for-dms.css — стили для секции "Для мастеров" */
+.for-dms-section {
+  background-color: #151515;
+  color: var(--color-text);
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.for-dms-section h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.for-dms-section .lead {
+  color: #ccc;
+  margin-bottom: 2rem;
+  font-size: 1.15rem;
+}
+
+.dms-benefits {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.dms-card::part(base) {
+  background-color: #1f1f1f;
+  border: 1px solid #333;
+  padding: 1.25rem;
+  font-weight: 500;
+  min-width: 220px;
+  text-align: left;
+}
+
+.cta {
+  margin-top: 2rem;
+}
