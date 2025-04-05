@@ -3,10 +3,11 @@
 
 body {
   font-family: var(--font-main);
-  background-color: var(--color-bg);
   color: var(--color-text);
   line-height: 1.6;
+  background: radial-gradient(ellipse at top left, #1a1a1a, #0b0c10);
 }
+
 
 h1, h2, h3 {
   font-weight: 800;

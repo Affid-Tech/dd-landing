@@ -1,9 +1,13 @@
 /* variables.css — CSS-переменные (цвета, размеры и т.п.) */
 :root {
-    --color-bg: #0e0e0e;
-    --color-text: #f4f4f4;
-    --color-accent: #e63946;
-  
-    --font-main: 'Exo 2', sans-serif;
-  }
-  
+  --color-bg: #0b0c10;
+  --color-text: #f4f4f4;
+  --color-accent: #9b5de5;
+  /* purple glow */
+  --color-accent-alt: #00f5d4;
+  /* neon mint */
+  --color-surface: #1a1a1a;
+  --color-surface-glow: rgba(255, 255, 255, 0.05);
+
+  --font-main: 'Exo 2', sans-serif;
+}
