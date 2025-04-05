@@ -1,7 +1,7 @@
 
 /* faq.css — стили для секции FAQ */
 .faq-section {
-  background-color: #121212;
+  
   color: var(--color-text);
   padding: 4rem 1rem;
   text-align: center;

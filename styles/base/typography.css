@@ -5,7 +5,10 @@ body {
   font-family: var(--font-main);
   color: var(--color-text);
   line-height: 1.6;
-  background: radial-gradient(ellipse at top left, #1a1a1a, #0b0c10);
+  background: linear-gradient(to bottom right, #D669B4, #A85DE5),
+              url('/assets/bg.jpg');
+  background-blend-mode: multiply;
+  background-size: cover;
 }
 
 

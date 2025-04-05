@@ -2,7 +2,7 @@
 .navbar {
   position: sticky;
   top: 0;
-  background-color: #1a1a1a;
+  
   padding: 1rem 0;
   z-index: 10;
 }
@@ -33,6 +33,14 @@ h1,
 h2,
 h3 {
   text-shadow: 0 0 8px var(--color-accent);
+}
+
+.glass-section {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
 
 sl-button.primary::part(base) {

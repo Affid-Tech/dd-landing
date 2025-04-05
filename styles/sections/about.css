@@ -1,7 +1,7 @@
 
 /* about.css — стили для секции "О сообществе" */
 .about-section {
-  background-color: #1a1a1a;
+  
   color: var(--color-text);
   text-align: center;
   padding: 4rem 1rem;

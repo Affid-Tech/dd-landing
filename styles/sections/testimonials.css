@@ -1,7 +1,6 @@
 
 /* testimonials.css — стили для секции "Отзывы" */
 .testimonials-section {
-  background-color: #181818;
   color: var(--color-text);
   text-align: center;
   padding: 4rem 1rem;

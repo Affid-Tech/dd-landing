@@ -1,7 +1,6 @@
 
 /* for-dms.css — стили для секции "Для мастеров" */
 .for-dms-section {
-  background-color: #151515;
   color: var(--color-text);
   text-align: center;
   padding: 4rem 1rem;

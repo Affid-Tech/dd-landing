@@ -1,7 +1,7 @@
 
 /* features.css — стили для секции "Что делает нас особенными" */
 .features-section {
-  background-color: #121212;
+  
   text-align: center;
   color: var(--color-text);
   padding: 4rem 1rem;

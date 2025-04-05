@@ -1,7 +1,6 @@
 
 /* why-paid.css — стили для секции "Почему платно?" */
 .why-paid-section {
-  background-color: #1b1b1b;
   color: var(--color-text);
   text-align: center;
   padding: 4rem 1rem;

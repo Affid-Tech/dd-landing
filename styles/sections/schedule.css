@@ -1,7 +1,6 @@
 
 /* schedule.css — упрощённая версия с кнопкой */
 .schedule-section {
-  background-color: #101010;
   color: var(--color-text);
   text-align: center;
   padding: 4rem 1rem;
