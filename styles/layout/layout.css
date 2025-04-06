@@ -52,6 +52,10 @@ section {
 /* Mobile navbar toggle and style */
 
 @media (max-width: 768px) {
+  .paper-overlay, .gradient-background{
+    height: 120%;
+  }
+
   section {
     padding: 2rem 0;
   }
