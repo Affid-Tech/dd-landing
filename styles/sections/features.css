@@ -9,3 +9,10 @@
   font-size: 2rem;
   margin-bottom: 2rem;
 }
+
+@media (max-width: 768px) {
+  /* Mobile styles for features.css */
+  .section {
+    padding: 2rem 1rem;
+  }
+}

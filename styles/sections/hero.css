@@ -27,3 +27,10 @@
   height: 44px;
   margin-right: 16px;
 }
+
+@media (max-width: 768px) {
+  /* Mobile styles for hero.css */
+  .section {
+    padding: 2rem 1rem;
+  }
+}

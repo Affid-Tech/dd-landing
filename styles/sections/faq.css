@@ -17,3 +17,11 @@
   margin: 0 auto;
   text-align: left;
 }
+
+
+@media (max-width: 768px) {
+  /* Mobile styles for faq.css */
+  .section {
+    padding: 2rem 1rem;
+  }
+}

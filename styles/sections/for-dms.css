@@ -20,3 +20,11 @@
 .cta {
   margin-top: 2rem;
 }
+
+
+@media (max-width: 768px) {
+  /* Mobile styles for for-dms.css */
+  .section {
+    padding: 2rem 1rem;
+  }
+}

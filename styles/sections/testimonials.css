@@ -31,3 +31,11 @@
   color: #fff;
   text-align: right;
 }
+
+
+@media (max-width: 768px) {
+  /* Mobile styles for testimonials.css */
+  .section {
+    padding: 2rem 1rem;
+  }
+}
