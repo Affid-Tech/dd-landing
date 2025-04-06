@@ -21,7 +21,7 @@
 
 @media (max-width: 768px) {
   /* Mobile styles for final-cta.css */
-  .section {
+  .final-cta-section {
     padding: 2rem 1rem;
   }
 }

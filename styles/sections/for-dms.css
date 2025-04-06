@@ -23,15 +23,8 @@
 
 
 @media (max-width: 768px) {
-  /* Mobile styles for for-dms.css */
-  .section {
-    padding: 2rem 1rem;
-  }
-}
-
-
-@media (max-width: 768px) {
   .for-dms-section {
+    padding: 2rem 1rem;
     text-align: center;
   }
 

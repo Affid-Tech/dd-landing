@@ -35,7 +35,7 @@
 
 @media (max-width: 768px) {
   /* Mobile styles for testimonials.css */
-  .section {
+  .testimonials-section {
     padding: 2rem 1rem;
   }
 }

@@ -21,7 +21,7 @@
 
 @media (max-width: 768px) {
   /* Mobile styles for about.css */
-  .section {
+  .about-section {
     padding: 2rem 1rem;
   }
 }

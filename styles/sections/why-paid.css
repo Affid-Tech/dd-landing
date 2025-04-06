@@ -41,7 +41,7 @@
 
 @media (max-width: 768px) {
   /* Mobile styles for why-paid.css */
-  .section {
+  .why-paid-section {
     padding: 2rem 1rem;
   }
 }

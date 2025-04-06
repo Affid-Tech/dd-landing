@@ -21,7 +21,7 @@
 
 @media (max-width: 768px) {
   /* Mobile styles for faq.css */
-  .section {
+  .faq-section {
     padding: 2rem 1rem;
   }
 }
