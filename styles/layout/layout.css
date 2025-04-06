@@ -86,12 +86,6 @@ section {
 /* Desktop navbar layout */
 @media (min-width: 769px) {
   .main-nav {
-    display: flex !important;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    background: none;
-    padding: 0;
+    display: none;
   }
 }
