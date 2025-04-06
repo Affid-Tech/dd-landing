@@ -13,8 +13,9 @@
     font-weight: bold;
     color: #fff;
 
-    a{
+    img{
       margin: 1rem 0;
+      max-width: 2rem;
     }
   }
   
