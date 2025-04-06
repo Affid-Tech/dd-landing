@@ -2,7 +2,7 @@
 
 // ✅ Импортируем bundle с встроенным lit
 import 'https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.13.0/cdn/shoelace.js';
-import { registerIconLibrary } from '/dist/utilities/icon-library.js';
+import { registerIconLibrary } from 'https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.13.0/cdn/utilities/icon-library.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('[data-include]').forEach(async (el) => {
