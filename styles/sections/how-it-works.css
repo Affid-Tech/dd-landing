@@ -1,4 +1,3 @@
-
 /* how-it-works.css — стили для секции "Как это работает" */
 .how-it-works-section {
   color: var(--color-text);
@@ -12,15 +11,18 @@
 }
 
 .roles-grid {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
-  justify-content: center;
+}
+
+.role-card {
+  justify-items: center;
 }
 
 .role-card::part(base) {
   padding: 1.5rem;
-  max-width: 320px;
+  margin: auto auto;
   text-align: left;
 }
 
