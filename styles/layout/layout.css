@@ -59,7 +59,7 @@ section {
   .mobile-nav-wrapper {
     position: sticky;
     top: 0;
-    padding: 1rem;
+    padding: 0 1rem;
     z-index: 10;
     background-color: #00000030;
     backdrop-filter: blur(4px);
