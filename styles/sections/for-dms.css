@@ -17,21 +17,6 @@
   font-size: 1.15rem;
 }
 
-.dms-benefits {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-  margin-bottom: 2rem;
-}
-
-.dms-card::part(base) {
-  padding: 1.25rem;
-  font-weight: 500;
-  min-width: 220px;
-  text-align: left;
-}
-
 .cta {
   margin-top: 2rem;
 }
