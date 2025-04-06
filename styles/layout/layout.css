@@ -114,9 +114,7 @@ section {
       display: flex;
       max-height: 500px;
       padding: 0;
-      {
       margin-bottom: 1rem;
-      }
     }
 
   }
