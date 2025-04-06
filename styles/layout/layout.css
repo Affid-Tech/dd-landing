@@ -78,7 +78,7 @@ section {
     padding: 1rem;
   }
 
-  .main-nav[open] {
+  .main-nav.open {
     display: flex;
   }
 }
