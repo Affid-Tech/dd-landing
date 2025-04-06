@@ -1,7 +1,6 @@
-
 /* features.css — стили для секции "Что делает нас особенными" */
 .features-section {
-  
+
   text-align: center;
   color: var(--color-text);
   padding: 4rem 1rem;
@@ -14,8 +13,46 @@
 
 .features-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(8, 1fr);
   gap: 1.5rem;
+
+  .feature-card {
+    grid-column: span 2;
+
+    &:after {
+      counter-increment: grid;
+      content: counter(grid);
+    }
+
+    /* Dealing with 3 orphan items */
+    &:last-child:nth-child(4n - 1) {
+      grid-column-end: 8;
+    }
+
+    &:nth-last-child(2):nth-child(4n + 2) {
+      grid-column-end: 6;
+    }
+
+    &:nth-last-child(3):nth-child(4n + 1) {
+      grid-column-end: 4;
+    }
+
+    /* Dealing with 2 orphan items */
+    &:last-child:nth-child(4n - 2) {
+      grid-column-end: 7;
+    }
+
+    &:nth-last-child(2):nth-child(4n + 1) {
+      grid-column-end: 5;
+    }
+
+    /* Dealing with single orphan */
+    &:last-child:nth-child(4n - 3) {
+      grid-column-end: 6;
+    }
+
+    ;
+  }
 }
 
 .feature-card::part(base) {
