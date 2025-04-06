@@ -7,29 +7,37 @@
   z-index: 10;
   background-color: var(--navbar-bg-color);
   color: var(--navbar-color);
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+
+    a{
+      margin: 1rem 0;
+    }
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+
+    a {
+      color: #ccc;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    
+    a:hover {
+      color: #fff;
+    }
+  }
+  
+  
 }
 
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #fff;
-}
 
-.nav-links {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-}
-
-.nav-links a {
-  color: #ccc;
-  font-weight: 500;
-  transition: color 0.2s;
-}
-
-.nav-links a:hover {
-  color: #fff;
-}
 
 h1,
 h2,
