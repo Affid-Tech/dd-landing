@@ -1,6 +1,6 @@
 /* layout.css — отступы, сетки, структура */
 .gradient-background{
-  background: linear-gradient(135deg, #3a3d96, #9b5de5, #ff6f91);
+  background: linear-gradient(135deg, #3a3d96, #9b5de5);
   background-size: 400% 400%;
   animation: gradient 10s ease infinite;
   position: fixed;

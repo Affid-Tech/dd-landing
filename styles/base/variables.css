@@ -1,7 +1,5 @@
 /* variables.css — CSS-переменные (цвета, размеры и т.п.) */
 :root {
-  --color-gradient-start-bg: #9E4BE2;
-  --color-gradient-end-bg: #C93B9C;
   --color-bg: #9E4BE2;
   --color-text: #ffffff;
   --color-accent: #00C9C8;
@@ -15,8 +13,8 @@
   --navbar-bg-color: #3a3d96;
   --navbar-color: white;
 
-  --card-bg: #006C91;
-  --card-border: 1px solid #00506b;
+  --card-bg: #383f5c;
+  --card-border: 1px solid #2d334a;
 
   --font-main: 'Exo 2', sans-serif;
 }
