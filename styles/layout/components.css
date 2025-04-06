@@ -136,7 +136,14 @@ sl-card::part(base) {
   padding: 1rem;
 }
 
+sl-details.chest-icons::part(si-icon) {
+  width: 2em;
+  height: 2em;
+}
+
 sl-details.chest-icons::part(summary-icon) {
   /* Disable the expand/collapse animation */
+  height: 2em;
+  width: 2em;
   rotate: none;
 }
