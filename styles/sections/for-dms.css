@@ -28,3 +28,14 @@
     padding: 2rem 1rem;
   }
 }
+
+
+@media (max-width: 768px) {
+  .for-dms-section {
+    text-align: center;
+  }
+
+  .for-dms-section .lead {
+    font-size: 1rem;
+  }
+}

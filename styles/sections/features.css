@@ -16,3 +16,12 @@
     padding: 2rem 1rem;
   }
 }
+
+
+@media (max-width: 768px) {
+  .features-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
