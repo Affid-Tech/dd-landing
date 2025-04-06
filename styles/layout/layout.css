@@ -88,16 +88,31 @@ section {
     }
 
     .main-nav {
-      display: none;
+      display: flex;
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height 0.5s ease;
       flex-direction: column;
       gap: 1rem;
       text-align: center;
-      background: rgba(0, 0, 0, 0.8);
-      padding: 1rem;
+      padding: 0;
+
+      a:first-child{
+        margin-top: 1rem;
+      }
+      
+      a:last-child{
+        margin-bottom: 1rem;
+      }
     }
 
     .main-nav.open {
       display: flex;
+      max-height: 500px;
+      padding: 0;
+      {
+      margin-bottom: 1rem;
+      }
     }
 
   }
