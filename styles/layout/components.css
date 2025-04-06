@@ -141,7 +141,7 @@ sl-card::part(base) {
   padding: 1rem;
 }
 
-si-icon.big {
+.big {
   width: 2em;
   height: 2em;
 }
