@@ -64,7 +64,7 @@ h3 {
 
   p{
     color: var(--color-text);
-    
+
   }
 }
 
@@ -141,7 +141,7 @@ sl-card::part(base) {
   padding: 1rem;
 }
 
-sl-details.chest-icons si-icon {
+si-icon.big {
   width: 2em;
   height: 2em;
 }

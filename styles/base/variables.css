@@ -25,15 +25,16 @@
 :host,
 .sl-theme-light {
   /* override libray vars */
-  --sl-color-primary-50: #fff5f7;
-  --sl-color-primary-100: #ffe0e7;
-  --sl-color-primary-200: #ffc0cd;
-  --sl-color-primary-300: #ffa0b5;
-  --sl-color-primary-400: #ff819d;
-  --sl-color-primary-500: #e0577a;
-  --sl-color-primary-600: #ff6f91;
-  --sl-color-primary-700: #cc4b6e;
-  --sl-color-primary-800: #a03a57;
-  --sl-color-primary-900: #7a2c41;
-  --sl-color-primary-950: #511b2c;
+  --sl-color-primary-50: #f5f6fa;
+  --sl-color-primary-100: #e3e5ef;
+  --sl-color-primary-200: #c9cee0;
+  --sl-color-primary-300: #aeb7d1;
+  --sl-color-primary-400: #939fc1;
+  --sl-color-primary-500: #7988b0;
+  --sl-color-primary-600: #464e71;
+  --sl-color-primary-700: #383f5c;
+  --sl-color-primary-800: #2d334a;
+  --sl-color-primary-900: #222738;
+  --sl-color-primary-950: #161923;
+
 }
