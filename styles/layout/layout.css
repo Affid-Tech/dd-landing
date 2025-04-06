@@ -52,10 +52,6 @@ section {
 /* Mobile navbar toggle and style */
 
 @media (max-width: 768px) {
-  section {
-    padding: 2rem 0;
-  }
-
   nav.navbar {
     display: none;
   }
@@ -70,17 +66,24 @@ section {
     color: var(--navbar-color);
 
     .head {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
       .mobile-nav-toggle {
-        float: left;
         display: block;
         font-size: 2rem;
         padding: 1rem;
         cursor: pointer;
       }
 
-      .logo{
-        float: right;
+      .logo {
         display: block;
+        color: #fff;
+        line-height: 0;
+
+        img {
+          max-width: 6rem;
+        }
       }
     }
 
