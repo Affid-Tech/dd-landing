@@ -19,8 +19,8 @@
 }
 
 sl-details::part(base) {
-  background-color: #1c1c1c;
-  border: 1px solid #2e2e2e;
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
   border-radius: 6px;
   padding: 1rem;
   margin-bottom: 1rem;
