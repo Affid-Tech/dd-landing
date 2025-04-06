@@ -1,5 +1,5 @@
 /* layout.css — отступы, сетки, структура */
-.gradient-background{
+.gradient-background {
   background: linear-gradient(135deg, #3a3d96, #9b5de5);
   background-size: 400% 400%;
   animation: gradient 10s ease infinite;
@@ -27,15 +27,15 @@
 
 @keyframes gradient {
   0% {
-      background-position: 0% 50%;
+    background-position: 0% 50%;
   }
 
   50% {
-      background-position: 100% 50%;
+    background-position: 100% 50%;
   }
 
   100% {
-      background-position: 0% 50%;
+    background-position: 0% 50%;
   }
 }
 
@@ -49,43 +49,58 @@ section {
   padding: 0 1rem;
 }
 
+/* Mobile navbar toggle and style */
+
 @media (max-width: 768px) {
   nav.navbar {
     display: none;
   }
-}
 
-/* Mobile navbar toggle and style */
-.mobile-nav-toggle {
-  display: none;
-  font-size: 2rem;
-  padding: 1rem;
-  cursor: pointer;
-  z-index: 1001;
-}
-
-@media (max-width: 768px) {
-  .mobile-nav-toggle {
-    display: block;
-  }
-
-  .main-nav {
-    display: none;
-    flex-direction: column;
-    gap: 1rem;
-    text-align: center;
-    background: rgba(0, 0, 0, 0.8);
+  .mobile-nav-wrapper {
+    position: sticky;
+    top: 0;
     padding: 1rem;
+    z-index: 10;
+    background-color: #00000030;
+    backdrop-filter: blur(4px);
+    color: var(--navbar-color);
+
+    .head {
+      .mobile-nav-toggle {
+        float: left;
+        display: block;
+        font-size: 2rem;
+        padding: 1rem;
+        cursor: pointer;
+      }
+
+      .logo{
+        float: right;
+        display: block;
+      }
+    }
+
+    .main-nav {
+      display: none;
+      flex-direction: column;
+      gap: 1rem;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.8);
+      padding: 1rem;
+    }
+
+    .main-nav.open {
+      display: flex;
+    }
+
   }
 
-  .main-nav.open {
-    display: flex;
-  }
+
 }
 
 /* Desktop navbar layout */
 @media (min-width: 769px) {
-  .main-nav {
+  .mobile-nav-wrapper {
     display: none;
   }
 }
