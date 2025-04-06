@@ -111,3 +111,8 @@ sl-card::part(base) {
 .card::part(base) {
   padding: 1rem;
 }
+
+sl-details.chest-icons::part(summary-icon) {
+  /* Disable the expand/collapse animation */
+  rotate: none;
+}
