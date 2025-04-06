@@ -12,6 +12,9 @@
 
   --navbar-bg-color: #3a3d96;
   --navbar-color: white;
+  
+  --card-bg: #006C91;
+  --card-border: 1px solid #00beff;
 
   --font-main: 'Exo 2', sans-serif;
 }
