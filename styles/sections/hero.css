@@ -30,7 +30,7 @@
 
 @media (max-width: 768px) {
   /* Mobile styles for hero.css */
-  .section {
+  .hero-section {
     padding: 2rem 1rem;
   }
 }
