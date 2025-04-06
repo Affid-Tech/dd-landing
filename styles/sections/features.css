@@ -1,6 +1,5 @@
 /* features.css — стили для секции "Что делает нас особенными" */
 .features-section {
-
   text-align: center;
   color: var(--color-text);
   padding: 4rem 1rem;
@@ -18,11 +17,6 @@
 
   .feature-card {
     grid-column: span 2;
-
-    &:after {
-      counter-increment: grid;
-      content: counter(grid);
-    }
 
     /* Dealing with 3 orphan items */
     &:last-child:nth-child(4n - 1) {
@@ -50,8 +44,6 @@
     &:last-child:nth-child(4n - 3) {
       grid-column-end: 6;
     }
-
-    ;
   }
 }
 

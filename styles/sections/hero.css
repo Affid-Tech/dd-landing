@@ -22,3 +22,8 @@
   gap: 1rem;
   justify-content: center;
 }
+
+.tg-button img {
+  height: 44px;
+  margin-right: 16px;
+}
