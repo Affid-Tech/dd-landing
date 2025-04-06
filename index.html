@@ -29,6 +29,16 @@
     ☰
   </div>
 
+  <nav class="main-nav">
+    <a href="#about">О нас</a>
+    <a href="#features">Особенности</a>
+    <a href="#how-it-works">Как это работает</a>
+    <a href="#for-dms">Для мастеров</a>
+    <a href="#schedule">Расписание</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+
+
   <div class="gradient-background"></div>
   <div class="paper-overlay"></div>
 
@@ -88,6 +98,15 @@
 
   <!-- Скрипты -->
   <script type="module" src="./scripts/main.js"></script>
+
+<script>
+  // Simple mobile nav toggle (if needed)
+  document.addEventListener('click', function (e) {
+    if (e.target.classList.contains('mobile-nav-toggle')) {
+      document.querySelector('.main-nav').classList.toggle('open');
+    }
+  });
+</script>
 
 </body>
 
