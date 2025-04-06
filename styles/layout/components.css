@@ -49,10 +49,14 @@
 
 
 
-h1,
-h2,
-h3 {
-  text-shadow: 0 0 8px var(--color-accent);
+h1:after, h2:after, h3:after {
+  content: '';
+  display: block;
+  height: 4px;
+  width: 40%;
+  background: linear-gradient(to right, #ff6f91, #9b5de5);
+  margin: 0.3em auto 0;
+  border-radius: 2px;
 }
 
 .glass-section {
@@ -151,4 +155,18 @@ sl-details.chest-icons::part(summary-icon) {
   height: 2em;
   width: 2em;
   rotate: none;
+}
+
+sl-details::part(base) {
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 6px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+sl-details::part(summary) {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #fff;
 }

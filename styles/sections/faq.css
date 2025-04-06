@@ -17,16 +17,3 @@
   margin: 0 auto;
   text-align: left;
 }
-
-sl-details::part(base) {
-  background-color: var(--card-bg);
-  border: 1px solid var(--card-border);
-  border-radius: 6px;
-  padding: 1rem;
-  margin-bottom: 1rem;
-}
-
-sl-details::part(summary) {
-  font-weight: 600;
-  color: #fff;
-}
