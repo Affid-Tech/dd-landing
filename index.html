@@ -24,6 +24,11 @@
 </head>
 
 <body>
+
+  <div class="mobile-nav-toggle" onclick="document.querySelector('.main-nav').classList.toggle('open')">
+    ☰
+  </div>
+
   <div class="gradient-background"></div>
   <div class="paper-overlay"></div>
 
@@ -83,6 +88,16 @@
 
   <!-- Скрипты -->
   <script type="module" src="./scripts/main.js"></script>
+
+<script>
+  // Simple mobile nav toggle (if needed)
+  document.addEventListener('click', function (e) {
+    if (e.target.classList.contains('mobile-nav-toggle')) {
+      document.querySelector('.main-nav').classList.toggle('open');
+    }
+  });
+</script>
+
 </body>
 
 </html>

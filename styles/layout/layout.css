@@ -65,3 +65,44 @@ section {
     padding: 0.5rem;
   }
 }
+
+/* Mobile navbar toggle and style */
+.mobile-nav-toggle {
+  display: none;
+  font-size: 2rem;
+  padding: 1rem;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+@media (max-width: 768px) {
+  .mobile-nav-toggle {
+    display: block;
+  }
+
+  .main-nav {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 1rem;
+  }
+
+  .main-nav.open {
+    display: flex;
+  }
+}
+
+/* Desktop navbar layout */
+@media (min-width: 769px) {
+  .main-nav {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: none;
+    padding: 0;
+  }
+}
