@@ -4,17 +4,36 @@
   --color-gradient-end-bg: #C93B9C;
   --color-bg: #9E4BE2;
   --color-text: #ffffff;
-  --color-accent: #00C9C8; /* мятный */
-  --color-accent-alt: #FF6F61; /* кораллово-розовый */
+  --color-accent: #00C9C8;
+  /* мятный */
+  --color-accent-alt: #FF6F61;
+  /* кораллово-розовый */
   --color-button-primary: #006C91;
   --color-button-secondary: #ffffff;
   --color-surface: rgba(255, 255, 255, 0.1);
 
   --navbar-bg-color: #3a3d96;
   --navbar-color: white;
-  
+
   --card-bg: #006C91;
-  --card-border: 1px solid #00beff;
+  --card-border: 1px solid #00506b;
 
   --font-main: 'Exo 2', sans-serif;
+}
+
+:root,
+:host,
+.sl-theme-light {
+  /* override libray vars */
+  --sl-color-primary-50: #fff5f7;
+  --sl-color-primary-100: #ffe0e7;
+  --sl-color-primary-200: #ffc0cd;
+  --sl-color-primary-300: #ffa0b5;
+  --sl-color-primary-400: #ff819d;
+  --sl-color-primary-500: #e0577a;
+  --sl-color-primary-600: #ff6f91;
+  --sl-color-primary-700: #cc4b6e;
+  --sl-color-primary-800: #a03a57;
+  --sl-color-primary-900: #7a2c41;
+  --sl-color-primary-950: #511b2c;
 }
