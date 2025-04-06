@@ -18,8 +18,6 @@
 }
 
 .testimonial-card::part(base) {
-  background-color: #1f1f1f;
-  border: 1px solid #333;
   padding: 1.5rem;
   font-size: 1rem;
   font-style: italic;

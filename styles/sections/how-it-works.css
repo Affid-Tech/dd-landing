@@ -19,9 +19,7 @@
 }
 
 .role-card::part(base) {
-  background-color: #1e1e1e;
   padding: 1.5rem;
-  border: 1px solid #333;
   max-width: 320px;
   text-align: left;
 }
