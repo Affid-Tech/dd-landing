@@ -71,7 +71,31 @@ sl-card::part(base) {
   transition: border-color 0.3s ease;
 }
 
-.cards-grid {
+.cards-grid.col-3 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1.5rem;
+
+  .card {
+    grid-column: span 2;
+
+    /* Dealing with 2 orphan items */
+    &:last-child:nth-child(3n - 1) {
+      grid-column-end: 6;
+    }
+
+    &:nth-last-child(2):nth-child(3n + 1) {
+      grid-column-end: 4;
+    }
+
+    /* Dealing with single orphan */
+    &:last-child:nth-child(3n + 1) {
+      grid-column-end: 5;
+    }
+  }
+}
+
+.cards-grid.col-4 {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   gap: 1.5rem;
