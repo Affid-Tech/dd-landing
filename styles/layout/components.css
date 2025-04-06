@@ -5,7 +5,8 @@
 
   padding: 0 1rem;
   z-index: 10;
-  background-color: var(--navbar-bg-color);
+  background-color: #00000030;
+  backdrop-filter: blur(4px);
   color: var(--navbar-color);
 
   display: flex;
