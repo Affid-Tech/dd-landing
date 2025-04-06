@@ -25,7 +25,7 @@
 
 <body>
 
-  <div class="mobile-nav-toggle" onclick="document.querySelector('.main-nav').classList.toggle('open')">
+  <div class="mobile-nav-toggle" onclick="toggleMobileNavbar">
     ☰
   </div>
 
@@ -101,11 +101,9 @@
 
 <script>
   // Simple mobile nav toggle (if needed)
-  document.addEventListener('click', function (e) {
-    if (e.target.classList.contains('mobile-nav-toggle')) {
+ function toggleMobileNavbar () {
       document.querySelector('.main-nav').classList.toggle('open');
-    }
-  });
+  };
 </script>
 
 </body>
