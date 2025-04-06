@@ -5,10 +5,6 @@ body {
   font-family: var(--font-main);
   color: var(--color-text);
   line-height: 1.6;
-  background: linear-gradient(to bottom right, #D669B4, #A85DE5),
-              url('/assets/bg.jpg');
-  background-blend-mode: multiply;
-  background-size: cover;
 }
 
 

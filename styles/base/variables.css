@@ -1,12 +1,17 @@
 /* variables.css — CSS-переменные (цвета, размеры и т.п.) */
 :root {
-  --color-bg: #D669B4; /* насыщенно-розовый фиолетовый */
+  --color-gradient-start-bg: #9E4BE2;
+  --color-gradient-end-bg: #C93B9C;
+  --color-bg: #9E4BE2;
   --color-text: #ffffff;
   --color-accent: #00C9C8; /* мятный */
   --color-accent-alt: #FF6F61; /* кораллово-розовый */
   --color-button-primary: #006C91;
   --color-button-secondary: #ffffff;
   --color-surface: rgba(255, 255, 255, 0.1);
+
+  --navbar-bg-color: #3a3d96;
+  --navbar-color: white;
 
   --font-main: 'Exo 2', sans-serif;
 }
