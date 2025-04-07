@@ -23,5 +23,9 @@
   /* Mobile styles for final-cta.css */
   .final-cta-section {
     padding: 2rem 1rem;
+
+    .final-buttons{
+      flex-direction: column;
+    }
   }
 }
