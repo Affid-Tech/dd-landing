@@ -1,0 +1,18 @@
+/* features.css — стили для секции "Что делает нас особенными" */
+.features-section {
+  text-align: center;
+  color: var(--color-text);
+  padding: 4rem 1rem;
+}
+
+.features-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  /* Mobile styles for features.css */
+  .features-section {
+    padding: 2rem 1rem;
+  }
+}

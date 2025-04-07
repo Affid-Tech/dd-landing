@@ -1,0 +1,27 @@
+
+/* about.css — стили для секции "О сообществе" */
+.about-section {
+  color: var(--color-text);
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.about-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.about-section p {
+  max-width: 700px;
+  margin: 0 auto 1rem auto;
+  font-size: 1.1rem;
+  
+}
+
+
+@media (max-width: 768px) {
+  /* Mobile styles for about.css */
+  .about-section {
+    padding: 2rem 1rem;
+  }
+}

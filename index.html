@@ -2,52 +2,118 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Dicebound</title>
-    <!-- Favicon links -->
-    <link rel="icon" href="assets/favicon-16x16.png" sizes="16x16" type="image/png">
-    <link rel="icon" href="assets/favicon-32x32.png" sizes="32x32" type="image/png">
-    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-    
-    <!-- Android-specific icons -->
-    <link rel="icon" sizes="192x192" href="assets/android-chrome-192x192.png">
-    <link rel="icon" sizes="512x512" href="assets/android-chrome-512x512.png">
-    
-    <!-- Manifest file for PWA -->
-    <link rel="manifest" href="assets/manifest.json">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2&amp;display=swap" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digital Dicebound — Онлайн-приключения в D&D</title>
+
+  <!-- Favicon links -->
+  <link rel="icon" href="assets/favicon-16x16.png" sizes="16x16" type="image/png">
+  <link rel="icon" href="assets/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  
+  <!-- Android-specific icons -->
+  <link rel="icon" sizes="192x192" href="assets/android-chrome-192x192.png">
+  <link rel="icon" sizes="512x512" href="assets/android-chrome-512x512.png">
+  
+  <!-- Manifest file for PWA -->
+  <link rel="manifest" href="assets/manifest.json">
+
+  <!-- Стили -->
+  <link rel="stylesheet" href="./styles/main.css" />
 </head>
 
 <body>
-    <div class="gradient-background"></div>
-    <div class="paper-overlay"></div>
-    <div class="content">
-        <img src="assets/white-letter-logo.png" alt="Digital Dicebound Logo" class="logo">
-        <h1>Добро пожаловать в Digital Dicebound</h1>
-        <p>Мы играем в D&amp;D с друзьями <span class="highlight">онлайн</span> по всему миру</p>
 
-        <p>Это не только сообщество, но и <span class="highlight">площадка</span> для проведения игр, где каждый мастер может создать уникальное приключение для игроков</p>
 
-        <a href="https://t.me/dnd_digital_dicebound" class="button" target="_blank">
-            <img src="https://telegram.org/img/t_logo.svg" alt="Telegram Logo"><span>Присоединяйся к сообществу в Telegram</span>
-        </a>
-
-        <div class="secondary-actions">
-            <a href="https://schedule.digitaldicebound.com/" class="button secondary" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/512/591/591576.png" alt="Calendar"><span>Расписание игр</span>
-            </a>
-    
-            <a href="https://t.me/Affid_fedorov?text=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%81%D1%82%D0%B8%20%D0%B8%D0%B3%D1%80%D1%83%20%3A%29" class="button secondary" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/512/5532/5532799.png" alt="Dungeon Master"><span>Я мастер</span>
-            </a>
-        </div>
+  <div class="mobile-nav-wrapper">
+    <div class="head">
+      <div class="mobile-nav-toggle" onclick="toggleMobileNavbar()">
+        ☰
+      </div>
+      <a class="logo" href="#hero">
+        <img src="assets/white-letter-logo.png" alt="Digital Dicebound Logo">
+      </a>
     </div>
+    
+  
+    <nav class="main-nav">
+      <a onclick="toggleMobileNavbar()" href="#about">О нас</a>
+      <a onclick="toggleMobileNavbar()" href="#features">Особенности</a>
+      <a onclick="toggleMobileNavbar()" href="#how-it-works">Как это работает</a>
+      <a onclick="toggleMobileNavbar()" href="#for-dms">Для мастеров</a>
+      <a onclick="toggleMobileNavbar()" href="#schedule">Расписание</a>
+      <a onclick="toggleMobileNavbar()" href="#faq">FAQ</a>
+    </nav>
+  </div>
 
 
+  <div class="gradient-background"></div>
+  <div class="paper-overlay"></div>
+
+  <!-- Sticky Navigation -->
+  <nav class="navbar">
+    <a class="logo" href="#hero">
+      <img src="assets/white-letter-logo.png" alt="Digital Dicebound Logo">
+    </a>
+    <div class="container">
+      <ul class="nav-links">
+        <li><a href="#about">О нас</a></li>
+        <li><a href="#features">Особенности</a></li>
+        <li><a href="#how-it-works">Как это работает</a></li>
+        <li><a href="#schedule">Расписание</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li>
+          <sl-button href="#final-cta" variant="primary" size="medium">
+            Присоединиться
+          </sl-button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Header / Hero -->
+  <header id="hero" data-include="sections/hero.html"></header>
+
+  <!-- About -->
+  <section id="about" data-include="sections/about.html"></section>
+
+  <!-- Features -->
+  <section id="features" data-include="sections/features.html"></section>
+
+  <!-- How it works -->
+  <section id="how-it-works" data-include="sections/how-it-works.html"></section>
+
+  <!-- For DMs -->
+  <section id="for-dms" data-include="sections/for-dms.html"></section>
+
+  <!-- Why Paid -->
+  <section id="why-paid" data-include="sections/why-paid.html"></section>
+
+  <!-- Schedule -->
+  <section id="schedule" data-include="sections/schedule.html"></section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" data-include="sections/testimonials.html"></section>
+
+  <!-- FAQ -->
+  <section id="faq" data-include="sections/faq.html"></section>
+
+  <!-- Final CTA -->
+  <section id="final-cta" data-include="sections/final-cta.html"></section>
+
+  <!-- Footer -->
+  <footer id="footer" data-include="sections/footer.html"></footer>
+
+  <!-- Скрипты -->
+  <script type="module" src="./scripts/main.js"></script>
+
+<script>
+  // Simple mobile nav toggle (if needed)
+ function toggleMobileNavbar () {
+      document.querySelector('.main-nav').classList.toggle('open');
+  };
+</script>
 
 </body>
 

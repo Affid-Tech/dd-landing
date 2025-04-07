@@ -1,0 +1,41 @@
+
+/* testimonials.css — стили для секции "Отзывы" */
+.testimonials-section {
+  color: var(--color-text);
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.testimonials-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.testimonial-card::part(base) {
+  padding: 1.5rem;
+  font-size: 1rem;
+  font-style: italic;
+  
+}
+
+.author {
+  margin-top: 1rem;
+  font-weight: 600;
+  font-style: normal;
+  color: #fff;
+  text-align: right;
+}
+
+
+@media (max-width: 768px) {
+  /* Mobile styles for testimonials.css */
+  .testimonials-section {
+    padding: 2rem 1rem;
+  }
+}

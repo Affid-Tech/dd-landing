@@ -1,0 +1,180 @@
+/* components.css — UI-компоненты: navbar, кнопки, флексы */
+.navbar {
+  position: sticky;
+  top: 0;
+
+  padding: 0 1rem;
+  z-index: 10;
+  background-color: #00000030;
+  backdrop-filter: blur(4px);
+  color: var(--navbar-color);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: auto;
+
+  .logo {
+    color: #fff;
+    line-height: 0;
+
+    img {
+      max-width: 6rem;
+    }
+  }
+
+  .container {
+    display: block;
+    margin: 0;
+
+    .nav-links {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+
+      a {
+        color: #ccc;
+        font-weight: 500;
+        transition: color 0.2s;
+      }
+
+      a:hover {
+        color: #fff;
+      }
+    }
+
+  }
+
+}
+
+
+
+h1:after, h2:after, h3:after {
+  content: '';
+  display: block;
+  height: 4px;
+  width: 40%;
+  background: linear-gradient(to right, #ff6f91, #9b5de5);
+  margin: 0.3em auto 0;
+  border-radius: 2px;
+}
+
+.glass-section {
+  background: rgb(255 255 255 / 20%);
+  backdrop-filter: blur(4px);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+
+  p{
+    color: var(--color-text);
+
+  }
+}
+
+sl-card::part(base) {
+  background-color: var(--card-bg);
+  border: var(--card-border);
+  backdrop-filter: blur(4px);
+  border-radius: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.cards-grid.col-md-3 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1.5rem;
+
+  .card {
+    grid-column: span 2;
+
+    /* Dealing with 2 orphan items */
+    &:last-child:nth-child(3n - 1) {
+      grid-column-end: 6;
+    }
+
+    &:nth-last-child(2):nth-child(3n + 1) {
+      grid-column-end: 4;
+    }
+
+    /* Dealing with single orphan */
+    &:last-child:nth-child(3n + 1) {
+      grid-column-end: 5;
+    }
+  }
+}
+
+.cards-grid.col-md-4 {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 1.5rem;
+
+  .card {
+    grid-column: span 2;
+
+    /* Dealing with 3 orphan items */
+    &:last-child:nth-child(4n - 1) {
+      grid-column-end: 8;
+    }
+
+    &:nth-last-child(2):nth-child(4n + 2) {
+      grid-column-end: 6;
+    }
+
+    &:nth-last-child(3):nth-child(4n + 1) {
+      grid-column-end: 4;
+    }
+
+    /* Dealing with 2 orphan items */
+    &:last-child:nth-child(4n - 2) {
+      grid-column-end: 7;
+    }
+
+    &:nth-last-child(2):nth-child(4n + 1) {
+      grid-column-end: 5;
+    }
+
+    /* Dealing with single orphan */
+    &:last-child:nth-child(4n - 3) {
+      grid-column-end: 6;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .cards-grid.col-sm-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+.card::part(base) {
+  padding: 1rem;
+}
+
+.big {
+  width: 2em;
+  height: 2em;
+}
+
+sl-details.chest-icons::part(summary-icon) {
+  /* Disable the expand/collapse animation */
+  height: 2em;
+  width: 2em;
+  rotate: none;
+}
+
+sl-details::part(base) {
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 6px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+sl-details::part(summary) {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #fff;
+}

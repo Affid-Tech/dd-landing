@@ -1,0 +1,27 @@
+
+/* final-cta.css — финальный призыв к действию */
+.final-cta-section {
+  color: var(--color-text);
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.final-cta-section h2 {
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.final-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+
+@media (max-width: 768px) {
+  /* Mobile styles for final-cta.css */
+  .final-cta-section {
+    padding: 2rem 1rem;
+  }
+}

@@ -1,0 +1,38 @@
+/* variables.css — CSS-переменные (цвета, размеры и т.п.) */
+:root {
+  --color-bg: #9E4BE2;
+  --color-text: #ffffff;
+  --color-accent: #00C9C8;
+  /* мятный */
+  --color-accent-alt: #FF6F61;
+  /* кораллово-розовый */
+  --color-button-primary: #006C91;
+  --color-button-secondary: #ffffff;
+  --color-surface: rgba(255, 255, 255, 0.1);
+
+  --navbar-bg-color: #3a3d96;
+  --navbar-color: white;
+
+  --card-bg: #383f5c;
+  --card-border: 1px solid #2d334a;
+
+  --font-main: 'Exo 2', sans-serif;
+}
+
+:root,
+:host,
+.sl-theme-light {
+  /* override libray vars */
+  --sl-color-primary-50: #f5f6fa;
+  --sl-color-primary-100: #e3e5ef;
+  --sl-color-primary-200: #c9cee0;
+  --sl-color-primary-300: #aeb7d1;
+  --sl-color-primary-400: #939fc1;
+  --sl-color-primary-500: #7988b0;
+  --sl-color-primary-600: #464e71;
+  --sl-color-primary-700: #383f5c;
+  --sl-color-primary-800: #2d334a;
+  --sl-color-primary-900: #222738;
+  --sl-color-primary-950: #161923;
+
+}
