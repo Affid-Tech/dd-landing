@@ -32,5 +32,9 @@
   /* Mobile styles for hero.css */
   .hero-section {
     padding: 2rem 1rem;
+
+    .hero-buttons{
+      flex-direction: column;
+    }
   }
 }
