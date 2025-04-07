@@ -1,5 +1,5 @@
 /* layout.css — отступы, сетки, структура */
-.gradient-background{
+.gradient-background {
   background: linear-gradient(135deg, #3a3d96, #9b5de5);
   background-size: 400% 400%;
   animation: gradient 10s ease infinite;
@@ -27,15 +27,15 @@
 
 @keyframes gradient {
   0% {
-      background-position: 0% 50%;
+    background-position: 0% 50%;
   }
 
   50% {
-      background-position: 100% 50%;
+    background-position: 100% 50%;
   }
 
   100% {
-      background-position: 0% 50%;
+    background-position: 0% 50%;
   }
 }
 
@@ -47,4 +47,88 @@ section {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
+}
+
+/* Mobile navbar toggle and style */
+
+@media (max-width: 768px) {
+  .paper-overlay, .gradient-background{
+    height: 120%;
+  }
+
+  section {
+    padding: 2rem 0;
+  }
+
+  nav.navbar {
+    display: none;
+  }
+
+  .mobile-nav-wrapper {
+    position: sticky;
+    top: 0;
+    padding: 0 1rem;
+    z-index: 10;
+    background-color: #00000030;
+    backdrop-filter: blur(4px);
+    color: var(--navbar-color);
+
+    .head {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .mobile-nav-toggle {
+        display: block;
+        font-size: 2rem;
+        padding: 1rem;
+        cursor: pointer;
+      }
+
+      .logo {
+        display: block;
+        color: #fff;
+        line-height: 0;
+
+        img {
+          max-width: 6rem;
+        }
+      }
+    }
+
+    .main-nav {
+      display: flex;
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height 0.5s ease;
+      flex-direction: column;
+      gap: 1rem;
+      text-align: center;
+      padding: 0;
+
+      a:first-child{
+        margin-top: 1rem;
+      }
+      
+      a:last-child{
+        margin-bottom: 1rem;
+      }
+    }
+
+    .main-nav.open {
+      display: flex;
+      max-height: 500px;
+      padding: 0;
+      margin-bottom: 1rem;
+    }
+
+  }
+
+
+}
+
+/* Desktop navbar layout */
+@media (min-width: 769px) {
+  .mobile-nav-wrapper {
+    display: none;
+  }
 }

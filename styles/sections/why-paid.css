@@ -37,3 +37,11 @@
   font-style: italic;
   color: #aaa;
 }
+
+
+@media (max-width: 768px) {
+  /* Mobile styles for why-paid.css */
+  .why-paid-section {
+    padding: 2rem 1rem;
+  }
+}

@@ -16,3 +16,11 @@
   
   margin-bottom: 2rem;
 }
+
+
+@media (max-width: 768px) {
+  /* Mobile styles for schedule.css */
+  .schedule-section {
+    padding: 2rem 1rem;
+  }
+}

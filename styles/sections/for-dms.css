@@ -20,3 +20,15 @@
 .cta {
   margin-top: 2rem;
 }
+
+
+@media (max-width: 768px) {
+  .for-dms-section {
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .for-dms-section .lead {
+    font-size: 1rem;
+  }
+}

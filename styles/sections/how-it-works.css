@@ -35,3 +35,17 @@
 .role-card li {
   margin-bottom: 0.5rem;
 }
+
+@media (max-width: 768px) {
+  /* Mobile styles for how-it-works.css */
+  .how-it-works-section {
+    padding: 2rem 1rem;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .roles-grid {
+    grid-template-columns: 1fr;
+  }
+}

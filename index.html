@@ -24,6 +24,30 @@
 </head>
 
 <body>
+
+
+  <div class="mobile-nav-wrapper">
+    <div class="head">
+      <div class="mobile-nav-toggle" onclick="toggleMobileNavbar()">
+        ☰
+      </div>
+      <a class="logo" href="#hero">
+        <img src="assets/white-letter-logo.png" alt="Digital Dicebound Logo">
+      </a>
+    </div>
+    
+  
+    <nav class="main-nav">
+      <a onclick="toggleMobileNavbar()" href="#about">О нас</a>
+      <a onclick="toggleMobileNavbar()" href="#features">Особенности</a>
+      <a onclick="toggleMobileNavbar()" href="#how-it-works">Как это работает</a>
+      <a onclick="toggleMobileNavbar()" href="#for-dms">Для мастеров</a>
+      <a onclick="toggleMobileNavbar()" href="#schedule">Расписание</a>
+      <a onclick="toggleMobileNavbar()" href="#faq">FAQ</a>
+    </nav>
+  </div>
+
+
   <div class="gradient-background"></div>
   <div class="paper-overlay"></div>
 
@@ -83,6 +107,14 @@
 
   <!-- Скрипты -->
   <script type="module" src="./scripts/main.js"></script>
+
+<script>
+  // Simple mobile nav toggle (if needed)
+ function toggleMobileNavbar () {
+      document.querySelector('.main-nav').classList.toggle('open');
+  };
+</script>
+
 </body>
 
 </html>
