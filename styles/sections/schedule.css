@@ -1,24 +1,34 @@
-
 /* schedule.css — упрощённая версия с кнопкой */
 .schedule-section {
   color: var(--color-text);
   text-align: center;
   padding: 4rem 1rem;
-}
 
-.schedule-section h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
 
-.schedule-section .lead {
-  font-size: 1.15rem;
-  
-  margin-bottom: 2rem;
+  .lead {
+    font-size: 1.15rem;
+
+    margin-bottom: 2rem;
+  }
+
+  .next-game{
+    margin-bottom: 2rem;
+
+    .header {
+      font-size: 1.6rem;
+      font-weight: bold;
+    }
+  } 
+
 }
 
 
 @media (max-width: 768px) {
+
   /* Mobile styles for schedule.css */
   .schedule-section {
     padding: 2rem 1rem;
