@@ -21,7 +21,6 @@ window.loadNextGame = async function () {
 
         const nextGame = futureGames[0];
         const formattedDate = new Date(nextGame.date).toLocaleDateString('ru-RU', {
-            weekday: 'long',
             year: 'numeric',
             month: 'long',
             day: 'numeric',
@@ -30,6 +29,7 @@ window.loadNextGame = async function () {
         });
 
         container.innerHTML = `
+        <p class="header">Следующая игра:</p>
         <sl-card class="game-card" style="margin-top: 1rem;">
             <strong slot="header">🎲 ${nextGame.title}</strong>
             <div>
@@ -37,7 +37,6 @@ window.loadNextGame = async function () {
             <p>🗓 Время: <strong>${formattedDate}</strong></p>
             <p>👥 Игроков: <strong>${nextGame.currentPlayers} / ${nextGame.maxPlayers}</strong></p>
             <p>🕓 Длительность: <strong>${nextGame.duration} ч.</strong></p>
-            <p class="game-description">${nextGame.description}</p>
             </div>
         </sl-card>
         `;
