@@ -4,17 +4,46 @@
   color: var(--color-text);
   text-align: center;
   padding: 4rem 1rem;
-}
 
-.schedule-section h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.schedule-section .lead {
-  font-size: 1.15rem;
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
   
-  margin-bottom: 2rem;
+  .lead {
+    font-size: 1.15rem;
+    
+    margin-bottom: 2rem;
+  }
+
+  .game-card {
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 1rem;
+    padding: 1rem 1.5rem;
+    margin: 1rem 0;
+    backdrop-filter: blur(6px);
+    color: #fff;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .game-card-header {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .game-card-content p {
+    margin: 0.3rem 0;
+  }
+  
+  .game-description {
+    margin-top: 0.5rem;
+    font-style: italic;
+    opacity: 0.9;
+  }
+  
+
 }
 
 

@@ -23,20 +23,26 @@ window.loadNextGame = async function () {
       const date = new Date(nextGame.date);
   
       container.innerHTML = `
-        <h3>🎲 Ближайшая игра</h3>
-        <p><strong>${nextGame.title}</strong> от мастера ${nextGame.dm}</p>
-        <p>🗓 ${date.toLocaleDateString('ru-RU', {
-          weekday: 'long',
-          year: 'numeric',
-          month: 'long',
-          day: 'numeric',
-          hour: '2-digit',
-          minute: '2-digit',
-        })}</p>
-        <p>👥 Игроков: ${nextGame.currentPlayers}/${nextGame.maxPlayers}</p>
-        <p>🕓 Длительность: ${nextGame.duration} ч.</p>
-        <p>${nextGame.description}</p>
-      `;
+        <div class="game-card">
+            <div class="game-card-header">
+            🎲 <strong>${nextGame.title}</strong>
+            </div>
+            <div class="game-card-content">
+            <p>🧙 Мастер: <strong>${nextGame.dm}</strong></p>
+            <p>🗓 Время: <strong>${date.toLocaleDateString('ru-RU', {
+                weekday: 'long',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit',
+            })}</strong></p>
+            <p>👥 Игроков: <strong>${nextGame.currentPlayers} / ${nextGame.maxPlayers}</strong></p>
+            <p>🕓 Длительность: <strong>${nextGame.duration} ч.</strong></p>
+            <p class="game-description">${nextGame.description}</p>
+            </div>
+        </div>
+        `;
     } catch (error) {
       container.innerHTML = "<p>⚠️ Ошибка загрузки расписания.</p>";
       console.error("Ошибка загрузки игры:", error);
