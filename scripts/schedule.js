@@ -37,6 +37,7 @@ window.loadNextGame = async function () {
             <p>🗓 Время: <strong>${formattedDate}</strong></p>
             <p>👥 Игроков: <strong>${nextGame.currentPlayers} / ${nextGame.maxPlayers}</strong></p>
             <p>🕓 Длительность: <strong>${nextGame.duration} ч.</strong></p>
+            <p>🥉 Уровень персонажей: <strong>${nextGame.characterLevel}</strong></p>
             </div>
         </sl-card>
         `;
