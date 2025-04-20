@@ -1,5 +1,6 @@
 // main.js — модульная загрузка Shoelace и HTML-фрагментов
 import './schedule.js';
+import './reviews.js';
 
 // ✅ Импортируем bundle с встроенным lit
 import 'https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.13.0/cdn/shoelace.js';

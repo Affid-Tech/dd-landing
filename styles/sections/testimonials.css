@@ -1,5 +1,5 @@
-
 /* testimonials.css — стили для секции "Отзывы" */
+
 .testimonials-section {
   color: var(--color-text);
   text-align: center;
@@ -17,11 +17,32 @@
   gap: 1.5rem;
 }
 
+/* Shoelace sl-card внутренности */
 .testimonial-card::part(base) {
   padding: 1.5rem;
   font-size: 1rem;
   font-style: italic;
-  
+}
+
+.testimonial-avatar {
+  width: 128px;
+  height: 128px;
+  border-radius: 12px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-text {
+  text-align: left;
+}
+
+.testimonial-text p {
+  margin: 0.5em 0;
+}
+
+.spacer {
+  height: 1.2em;
 }
 
 .author {
@@ -29,12 +50,10 @@
   font-weight: 600;
   font-style: normal;
   color: #fff;
-  text-align: right;
+  text-align: center;
 }
 
-
 @media (max-width: 768px) {
-  /* Mobile styles for testimonials.css */
   .testimonials-section {
     padding: 2rem 1rem;
   }
