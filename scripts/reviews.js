@@ -1,4 +1,4 @@
-export async function initTestimonials() {
+window.initTestimonials = async function () {
     const grid = document.querySelector('.testimonials-grid');
     if (!grid) return;
   
